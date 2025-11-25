@@ -747,3 +747,30 @@
     font-style: italic;
 }
 
+/* ================================================================================================== */
+
+                                    /* MISSION PAGE */
+
+/* ================================================================================================== */
+#mission-hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#mission-hero h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0b1d40;
+}
+
+#mission-hero h1 i {
+    font-size: 1.1em;
+    color: #f4b728;
+}
+
+#mission-hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #0b1d40;
+    font-style: italic;
+}
