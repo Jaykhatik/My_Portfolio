@@ -1,0 +1,749 @@
+/* ========================= NAVBAR ========================= */
+
+.custom-nav {
+    background-color: #132c63;
+}
+
+.custom-nav .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+/* UNDERLINE HOVER EFFECT */
+.custom-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: #f4b728;
+    transition: width 0.3s ease;
+}
+
+.custom-nav .nav-link:hover {
+    color: #f4b728;
+}
+
+/* Keep active nav link white */
+.custom-nav .nav-link.active {
+    color: #ffffff !important;
+}
+
+
+.custom-nav .nav-link:hover::after,
+.custom-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+}
+
+/* UNIQUE JK SHIELD ICON */
+.j-icon {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 6px;
+    display: inline-block;
+    position: relative;
+    border: 3px solid #f4b728;
+}
+
+.j-icon::after {
+    content: "Jk";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    font-size: 18px;
+    font-weight: 800;
+    color: #132c63;
+}
+
+/* ========================= FOOTER ========================= */
+
+.custom-footer {
+    background: #112b60;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+}
+
+.footer-icon {
+    width: 55px;
+    height: 55px;
+    background: #f4b728;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-icon i {
+    font-size: 25px;
+    color: #112b60;
+}
+
+.footer-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(244, 183, 40, 0.7);
+
+}
+
+.footer-text {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+
+/* ============================================================================================================================ */
+
+/* INDEX PAGE */
+
+/* =============================================================================================================================== */
+
+
+
+/* ========================= HERO SECTION ========================= */
+
+.hero-section {
+    background: url('../images/hero-bg-DkPUIpm7.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* <-- THIS MAKES THE IMAGE NOT SCROLL */
+    padding: 90px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title {
+    z-index: 5;
+    font-size: 65px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    animation: smoothGoldenGlow 5s infinite ease-in;
+}
+
+/* SMOOTH YELLOW-GOLD GLOW */
+@keyframes smoothGoldenGlow {
+    0% {
+        opacity: 0.9;
+        text-shadow:
+            0 0 4px rgba(244, 183, 40, 0.2),
+            0 0 8px rgba(244, 183, 40, 0.15);
+    }
+
+    25% {
+        opacity: 1;
+        text-shadow:
+            0 0 10px rgba(244, 183, 40, 0.35),
+            0 0 18px rgba(244, 183, 40, 0.25);
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow:
+            0 0 25px rgba(244, 183, 40, 0.8),
+            0 0 45px rgba(244, 183, 40, 0.55),
+            0 0 70px rgba(244, 183, 40, 0.45);
+    }
+
+    75% {
+        opacity: 1;
+        text-shadow:
+            0 0 12px rgba(244, 183, 40, 0.4),
+            0 0 20px rgba(244, 183, 40, 0.22);
+    }
+
+    100% {
+        opacity: 0.9;
+        text-shadow:
+            0 0 4px rgba(244, 183, 40, 0.2),
+            0 0 8px rgba(244, 183, 40, 0.15);
+    }
+}
+
+
+.hero-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+/* Ensures all hero content is above overlay */
+.hero-section * {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-icon i {
+    font-size: 60px;
+    color: #fff;
+    animation: spinIcon 3s linear infinite;
+    display: inline-block;
+}
+
+@keyframes spinIcon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.subtitle {
+    background: #0a3fa8;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.hero-btn {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.filled-btn {
+    font-weight: 600;
+    color: #0b1d40 !important;
+    box-shadow: 4px 4px 10px #a4a39e;
+}
+
+.outline-btn {
+    border-width: 2px;
+    color: #f7c63d;
+}
+
+/* ========================= ANIMATED ARROW ========================= */
+.scroll-arrow i {
+    font-size: 45px;
+    color: #fff;
+    animation: arrowBounce 2s infinite ease-in-out;
+    display: inline-block;
+    /* IMPORTANT for animation */
+}
+
+@keyframes arrowBounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+/* ============================================================================================================================ */
+
+/* SKILLS PAGE */
+
+/* =============================================================================================================================== */
+
+#skill-hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#skill-hero h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0b1d40;
+}
+
+#skill-hero h1 i {
+    font-size: 1.1em;
+    color: #f4b728;
+}
+
+#skill-hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #0b1d40;
+    font-style: italic;
+}
+
+/* ========================= SKILL CARD ========================= */
+
+.skill-card {
+    background: linear-gradient(145deg, #0f2452, #132c63);
+    border-radius: 14px;
+    border: 2px solid #f4b728;
+    text-align: center;
+    padding: 30px;
+    transition: 0.35s ease-in-out;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 20px rgba(244, 183, 40, 0.45),
+        0 15px 25px rgba(0, 0, 0, 0.4);
+    border-color: #ffcc45;
+}
+
+/* Glowing border animation */
+.skill-card:hover::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    border-radius: 14px;
+    padding: 2px;
+    background: linear-gradient(45deg, #f4b728, #ffe08a, #f4b728, #ffe08a);
+    background-size: 300% 300%;
+    animation: borderGlow 3s linear infinite;
+    z-index: -1;
+}
+
+@keyframes borderGlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Icon Circle */
+.skill-icon-circle {
+    width: 90px;
+    height: 90px;
+    background: #ffffff;
+    border: 3px solid #f4b728;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(244, 183, 40, 0.4);
+}
+
+/* Circle hover */
+.skill-card:hover .skill-icon-circle {
+    transform: scale(1.1) rotate(8deg);
+    box-shadow: 0 0 20px rgba(244, 183, 40, 0.7);
+}
+
+/* Icon inside */
+.skill-icon-circle i {
+    font-size: 42px;
+    color: #132c63;
+    transition: 0.8s ease;
+}
+
+/* Spin on hover */
+.skill-card:hover .skill-icon-circle i {
+    transform: rotate(360deg) scale(1.15);
+}
+
+/* Title */
+.skill-title {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+}
+
+/* Progress Bar */
+.custom-progressbar {
+    height: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+.custom-progressbar .progress-bar {
+    font-weight: 700;
+    color: #132c63;
+    font-size: 14px;
+}
+
+/* Custom icon colors */
+.bootstrap-logo {
+    color: #7b11f5 !important;
+}
+
+.express-logo {
+    color: #000 !important;
+}
+
+
+/* ========== SPECIAL ABILITIES BOX ========== */
+.abilities-box {
+    background: #ffffff;
+    border: 2px solid #f4b728;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    max-width: 1100px;
+    transition: all 0.4s ease-in-out;
+}
+
+.abilities-box:hover {
+    transform: translateY(-10px);
+}
+
+/* TITLE */
+.abilities-title {
+    font-weight: 700;
+    color: #132c63;
+    font-size: 1.8rem;
+    display: inline-block;
+    background: #d7e2ff;
+    padding: 5px 18px;
+    border-radius: 6px;
+}
+
+/* STAR ICON */
+.sparkle-icon i {
+    font-size: 2.3rem;
+    color: #f4b728;
+}
+
+/* ========== ABILITY PILLS ========== */
+.ability-pill {
+    background: #f4b728;
+    color: #132c63;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(244, 183, 40, 0.35);
+}
+
+/* Hover effect */
+.ability-pill:hover {
+    background: #ffcc45;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ================================================================================================================================ */
+
+/* CONTACT PAGE */
+
+/* ================================================================================================================================= */
+
+#contact-page {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #d7e2ff;
+}
+
+#contact-page h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0b1d40;
+    font-size: 40px;
+}
+
+#contact-page h1 i {
+    font-size: 1.1em;
+    color: #f4b728;
+}
+
+#contact-page p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #0b1d40;
+    font-style: italic;
+}
+
+/* Contact Card */
+
+
+.contact-card {
+    max-width: 700px;
+    background: #ffffffcc;
+    color: #0b1d40;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #fff5;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+}
+
+.contact-card .main-logo {
+    color: #0a3fa8;
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 50px rgba(255, 193, 7, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Title */
+.form-title {
+    font-weight: 600;
+    color: #0b1d40;
+    border-left: 4px solid #f4c424;
+    padding-left: 12px;
+}
+
+/* Inputs */
+.custom-input {
+    background: #e9edf5;
+    border: 2px solid transparent;
+    padding: 14px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    color: #0b1d40;
+}
+
+.custom-input:focus {
+    background: #fff;
+    border-color: #f4c424 !important;
+    box-shadow: 0 0 10px rgba(244, 196, 36, 0.4);
+}
+
+/* Button */
+.submit-btn {
+    background: linear-gradient(135deg, #ffd24b, #f4b400);
+    border: none;
+    border-radius: 14px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #0b1d40;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn i {
+    font-size: 1.2rem;
+}
+
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eef2ff;
+    color: #f4b400;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+
+.map-frame iframe {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+}
+
+.social-icon {
+    width: 55px;
+    height: 55px;
+    background: #f4c32f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #112b60;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================================================================================ */
+
+/* ABOUT PAGE */
+
+/* ============================================================================================================================= */
+
+#about-hero {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#about-hero h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0b1d40;
+    text-shadow: 0px 7px 7px #f4b400;
+}
+
+#about-hero h1 i {
+    font-size: 1.1em;
+    color: #f4b728;
+}
+
+#about-hero p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #0b1d40;
+    font-style: italic;
+}
+
+.intro {
+    height: max-content;
+    width: 85%;
+    border: 2px solid #fbe5b3;
+    border-radius: 30px;
+    text-align: center;
+     background: #f0f0f1;
+    box-shadow: 0 0 25px rgba(171, 152, 56, 0.08);
+}
+.intro-icon i{
+    font-size: 70px;
+    color: #f4b400;
+}
+.intro-text strong,p{
+    color: #0f2452;
+}
+.intro-text span{
+    font-style: italic;
+    color: #6882b6;
+}
+/* Vertical line */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    bottom: 0;
+    width: 4px;
+    background: #f7cc33;
+    transform: translateX(-50%);
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    margin-bottom: 80px;
+}
+
+.timeline-item.left {
+    text-align: left;
+    padding-right: 40px;
+}
+
+.timeline-item.right {
+    text-align: left;
+    margin-left: 50%;
+    padding-left: 40px;
+}
+
+/* Dots */
+.timeline-dot {
+    position: absolute;
+    top: 77px;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border: 4px solid #f7cc33;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.timeline-item.left .timeline-dot {
+    right: -11px;
+}
+
+.timeline-item.right .timeline-dot {
+    left: -11px;
+}
+
+/* Card Hover Effect */
+.timeline-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.timeline-card i{
+    color: #f7cc33;
+    font-size: 45px;
+    margin-right: 10px;
+}
+.timeline-card p{
+    color: #6882b6;
+    font-style: italic;
+}
+
+/* Hover animations */
+.timeline-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Dot hover sync */
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.3);
+    background: #f7cc33;
+    box-shadow: 0 0 15px #f7cc33;
+}
+
+.quote-box {         
+    border-radius: 20px;
+    background: whitesmoke;             
+    /* box-shadow: 0 0 20px rgba(93, 37, 246, 0.3);   */
+    transition: all 0.3s ease-in-out;
+    padding: 2rem;
+}
+
+/* Hover glow effect */
+.quote-box:hover {
+    box-shadow: 0 0 35px #ffcc45;
+    transform: translateY(-4px);
+    border: 1px solid #f4b400;
+}
+
+.quote-text {
+    font-size: 2rem;
+    color: #0a3fa8;    /* vibrant yellow text */
+    font-weight: 600;
+}
+
+.quote-subtext {
+    color: #0a3fa8;    /* soft gray for subtext */
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jay Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- ========================= NAVBAR ========================= -->
+    <nav class="navbar navbar-expand-lg custom-nav py-3 sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
+                <span class="j-icon me-2"></span> JayQuest
+            </a>
+
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-lg-4 gap-3 text-center">
+
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door me-1"></i>
+                            Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="bi bi-diagram-3 me-1"></i>
+                            Skills</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="mission.html"><i class="bi bi-trophy me-1"></i>
+                            Missions</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="about.html"><i
+                                class="bi bi-person-lines-fill me-1"></i> About</a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-envelope me-1"></i>
+                            Contact</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <section id="contact-page" class="py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-semibold text-contact-custom mb-3">
+                            <i class="bi bi-envelope-fill"></i>
+                            Message the Guild Master
+                        </h1>
+                        <p>
+                            Send a raven to begin our collaboration
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section" class="py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- LEFT SIDE – CONTACT FORM -->
+                    <div class="col-lg-6">
+                        <div class="contact-card p-4 p-md-5 h-100">
+                            <h3 class="mb-4 form-title">
+                                <i class="bi bi-send me-2"></i> Send Your Quest Request
+                            </h3>
+
+                            <form action="https://formspree.io/f/movzlzav" method="POST">
+                                <div class="mb-4">
+                                    <label class="form-label">
+                                        <i class="bi bi-person me-1"></i> Your Name
+                                    </label>
+                                    <input type="text" name="Name" class="form-control custom-input" placeholder="Enter your name">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label">
+                                        <i class="bi bi-envelope me-1"></i> Email Address
+                                    </label>
+                                    <input type="email" name="Email" class="form-control custom-input"
+                                        placeholder="your.email@example.com">
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label">
+                                        <i class="bi bi-list-check me-1"></i> Quest Type
+                                    </label>
+                                    <select name="Quest Type" class="form-select custom-input">
+                                        <option>Select quest type...</option>
+                                        <option>Website Developing</option>
+                                        <option>General Inquiry</option>
+                                        <option>Freelance Work</option>
+                                        <option>Project Collaboration</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-4">
+                                    <label class="form-label">
+                                        <i class="bi bi-chat-square-text me-1"></i> Your Message
+                                    </label>
+                                    <textarea rows="5" name="Message" class="form-control custom-input"
+                                        placeholder="Describe your quest or project..."></textarea>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button type="submit" class="btn submit-btn w-100 py-3">
+                                        <i class="bi bi-send me-2"></i> SEND MESSAGE
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE -->
+                    <div class="col-lg-6">
+
+                        <!-- RIGHT DIV 1 – CONTACT INFO + MAP -->
+                        <div class="contact-card p-4 mb-4">
+                            <h4 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill main-logo"></i> Guild Headquarters
+                            </h4>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div><strong>Email:</strong> jaykhatik1905@gmail.com</div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div><strong>Phone:</strong> +91 9879813898</div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="icon-circle">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div><strong>Location:</strong> Tops Technologies</div>
+                            </div>
+
+                            <div class="map-frame">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7211352020354!2d72.60642777509106!3d22.997279879191467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c2fc005927%3A0x918e69150ca1c935!2sTOPS%20Technologies!5e0!3m2!1sen!2sus!4v1764032118836!5m2!1sen!2sus"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT DIV 2 – SOCIAL ICONS -->
+                        <div class="contact-card text-center p-4">
+                            <h4 class="fw-bold mb-4">Connect on Social Quests</h4>
+
+                            <div class="d-flex justify-content-center gap-4">
+                                <a href="https://github.com/jaykhatik" class="social-icon"><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/jay-khatik-573616372/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="custom-footer text-center py-5">
+        <div class="container">
+
+            <!-- Social Icons -->
+            <div class="footer-icons mb-3 d-flex justify-content-center gap-4 flex-wrap">
+
+                <a href="https://github.com/jaykhatik" class="footer-icon"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/jay-khatik-573616372/" class="footer-icon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="footer-icon"><i class="bi bi-twitter"></i></a>
+                <a href="mailto:jaykhatik1905@gmail.com" class="footer-icon"><i class="bi bi-envelope"></i></a>
+
+            </div>
+
+            <!-- Footer Text -->
+            <p class="footer-text mb-0">
+                © 2025 Jay Quest. All quests completed with passion.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
