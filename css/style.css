@@ -116,6 +116,23 @@
 
 /* ========================= HERO SECTION ========================= */
 
+/* resume download button in index page */
+.resume-button-download{
+     background: #0f172a;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 12px whitesmoke;
+}
+.resume-button-download:hover{
+      background: transparent;
+    color: #ffc107;
+    box-shadow: 0 0 20px whitesmoke;
+}
+
+
 .hero-section {
     background: url('../images/hero-bg-DkPUIpm7.jpg');
     background-position: center;
@@ -224,11 +241,12 @@
 .filled-btn {
     font-weight: 600;
     color: #0b1d40 !important;
-    box-shadow: 4px 4px 10px #a4a39e;
+    box-shadow: 0px 0px 10px whitesmoke;
 }
 
 .outline-btn {
     border-width: 2px;
+        box-shadow: 0px 0px 10px whitesmoke;
     color: #f7c63d;
 }
 
@@ -253,6 +271,189 @@
     100% {
         transform: translateY(0);
     }
+}
+
+.stats-section .stats-card {
+    background: whitesmoke;
+    border: 1px solid rgb(245, 208, 139);
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+
+.stats-card:hover {
+    box-shadow: 0 0 20px #6882b6;
+    transform: translateY(-5px);
+}
+
+.stats-icon i {
+    font-size: 40px;
+    color: #ffc107;
+    transition: 0.6s ease;
+}
+
+/* Hover effect on both card + icon */
+.stats-card:hover .stats-icon i {
+    color: #0f2452;
+    text-shadow: 0 0 10px #6882b6;
+}
+
+.stats-number {
+    font-size: 42px;
+    font-weight: 700;
+    color: #102b61;
+}
+
+.stats-card:hover .stats-number {
+    color: #ffc107;
+}
+
+.stats-text {
+    color: #6882b6;
+    font-size: 18px;
+}
+
+/* TITLES */
+.section-title {
+    color: #6882b6;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.section-title .highlight {
+    color: #ffc107;
+}
+
+.section-subtitle {
+    color: #6882b6;
+    font-size: 18px;
+}
+
+/* CARD STYLE */
+.service-card {
+    background: #102b61;
+    backdrop-filter: blur(15px);
+    border: 2px solid orange;
+    padding: 35px;
+    border-radius: 22px;
+    text-align: center;
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 0 12px rgba(0, 234, 255, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px #0b1d40;
+    background: linear-gradient(45deg, #f4b728, #ffe08a, #f4b728, #ffe08a);
+}
+
+/* ICON CIRCLE */
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: whitesmoke;
+    border: 1px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    color: orange;
+    box-shadow: 0 0 14px rgba(0, 234, 255, 0.4);
+    transition: 1s ease;
+    animation: pulseGlow 2s infinite ease-in-out;
+
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* ICON GLOW ANIMATION */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 12px rgba(0, 234, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 22px rgba(0, 234, 255, 0.55);
+    }
+
+    100% {
+        box-shadow: 0 0 12px rgba(0, 234, 255, 0.3);
+    }
+}
+
+/* TEXT */
+.service-title {
+    color: orange;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.service-text {
+    color: #6882b6;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* TAG BUTTONS */
+.tag-index {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 25px;
+    border: 1px solid orange;
+    color: orange;
+    margin: 4px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.tag-index:hover {
+    background: #0f2452;
+    color: orange;
+}
+
+.cta-title {
+    font-size: 42px;
+    color: #ffc107;
+    text-shadow: 0px 0px 4px orange;
+    font-weight: 600;
+}
+
+.cta-subtitle {
+    color: #6882b6;
+    font-size: 18px;
+}
+
+.cta-btn-filled {
+    background: #102b61;
+    color: #ffc107;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid #ffc107;
+}
+
+.cta-btn-filled:hover {
+    background: #ffc107;
+    box-shadow: 0 0 15px orange;
+    color: #132c63;
+}
+
+.cta-btn-outline {
+    border-radius: 40px;
+    font-weight: 600;
+    border: 2px solid #102b61;
+    color: #102b61;
+    transition: 0.3s;
+}
+
+.cta-btn-outline:hover {
+    background: #102b61;
+    color: #ffc107;
+    box-shadow: 0 0 15px #102b61;
+    border: 1px solid #ffc107;
 }
 
 
@@ -627,19 +828,71 @@
     border: 2px solid #fbe5b3;
     border-radius: 30px;
     text-align: center;
-     background: #f0f0f1;
-    box-shadow: 0 0 25px rgba(171, 152, 56, 0.08);
+    background: #f0f0f1;
+    box-shadow: 0 0 25px rgba(171, 152, 56, 0.2);
 }
-.intro-icon i{
+
+.intro-icon i {
     font-size: 70px;
     color: #f4b400;
 }
-.intro-text strong,p{
+
+.intro-text strong,
+p {
     color: #0f2452;
 }
-.intro-text span{
+
+.intro-text span {
     font-style: italic;
     color: #6882b6;
+}
+
+.custom-card-about {
+    background: #f0f0f1;
+    border: 2px solid #fbe5b3;
+    border-radius: 30px;
+    padding: 30px;
+    transition: 0.3s ease;
+    width: 85%;
+    box-shadow: 0 0 25px rgba(171, 152, 56, 0.2);
+}
+
+
+/* Title Styling */
+.section-title-about {
+    color: #ffc107;
+    font-size: 26px;
+    font-weight: 700;
+}
+.section-title-about i{
+    color: #102b61;
+}
+
+/* Text Styling */
+.section-text-about,
+.edu-college {
+    color: #6882b6;
+    font-size: 17px;
+}
+
+
+/* Degree Text */
+.edu-degree {
+    font-size: 23px;
+}
+
+/* CGPA Highlight */
+.edu-cgpa {
+    font-size: 16px;
+}
+
+#services-about {
+    background-color: whitesmoke;
+}
+.custtom-myjourney-text{
+    color: #102b61;
+    background-color: whitesmoke;
+    border-radius: 20px;
 }
 /* Vertical line */
 .timeline-line {
@@ -696,12 +949,14 @@
     border-radius: 15px;
     transition: all 0.3s ease;
 }
-.timeline-card i{
+
+.timeline-card i {
     color: #f7cc33;
     font-size: 45px;
     margin-right: 10px;
 }
-.timeline-card p{
+
+.timeline-card p {
     color: #6882b6;
     font-style: italic;
 }
@@ -719,9 +974,9 @@
     box-shadow: 0 0 15px #f7cc33;
 }
 
-.quote-box {         
+.quote-box {
     border-radius: 20px;
-    background: whitesmoke;             
+    background: whitesmoke;
     /* box-shadow: 0 0 20px rgba(93, 37, 246, 0.3);   */
     transition: all 0.3s ease-in-out;
     padding: 2rem;
@@ -736,22 +991,23 @@
 
 .quote-text {
     font-size: 2rem;
-    color: #0a3fa8;    /* vibrant yellow text */
+    color: #0a3fa8;
+    /* vibrant yellow text */
     font-weight: 600;
 }
 
 .quote-subtext {
-    color: #0a3fa8;    /* soft gray for subtext */
+    color: #6882b6;
+    /* soft gray for subtext */
     font-size: 1.1rem;
     margin-top: 0.5rem;
     font-style: italic;
 }
 
-/* ================================================================================================== */
 
-                                    /* MISSION PAGE */
-
-/* ================================================================================================== */
+/* ========================================================================================================================= */
+/* MISSION PAGE */
+/* =========================================================================================================================== */
 #mission-hero {
     padding-top: 90px;
     padding-bottom: 90px;
@@ -773,4 +1029,202 @@
     margin-top: 10px;
     color: #0b1d40;
     font-style: italic;
+}
+
+/* ============================================
+   PROJECT CARD — MODERN GLASS/NEON UI
+============================================ */
+
+.project-card {
+    background: #112b60;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid rgba(244, 180, 0, 0.4);
+    box-shadow: 0 0 25px rgba(244, 180, 0, 0.2);
+    transition: all 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+/* Smooth hover effects */
+.project-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    border-color: #f4b400;
+    box-shadow: 0 0 60px rgba(244, 180, 0, 0.45),
+        0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Top Image */
+.card-top {
+    height: 200px;
+    background: #101933;
+    overflow: hidden;
+    border-radius: 0;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: 0.4s ease;
+}
+
+/* Smooth zoom effect on hover */
+.project-card:hover .project-img {
+    transform: scale(1.08);
+    opacity: 1;
+}
+
+/* Content */
+.card-content {
+    padding: 28px;
+    flex: 1;
+    position: relative;
+    z-index: 10;
+}
+
+/* Title */
+.project-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #f4b400;
+    text-shadow: 0 0 10px rgba(244, 180, 0, 0.6);
+    transition: 0.3s;
+}
+
+/* Description */
+.project-desc {
+    color: #8aa4d4;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Tags */
+.tag {
+    color: #f4b400;
+    padding: 2px 10px;
+    border: 1px solid #f4b400;
+    border-radius: 12px;
+    font-size: 13px;
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Info List */
+.info-list {
+    color: #8aa4d4;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Buttons wrapper */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.35s ease;
+}
+
+/* Buttons appear on hover */
+.project-card:hover .buttons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* DEMO Button */
+.demo-btn {
+    background: whitesmoke;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 0px 12px whitesmoke;
+}
+
+.demo-btn:hover {
+    background: orange;
+    color: white;
+    box-shadow: 0px 0px 18px orange;
+}
+
+/* CODE Button */
+.code-btn {
+    background: orange;
+    padding: 10px 30px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease-in;
+    box-shadow: 0px 0px 12px orange;
+    border: none;
+}
+
+.code-btn:hover {
+    background: white;
+    color: #0f172a;
+    box-shadow: 0px 0px 18px whitesmoke;
+}
+
+.code-btn i {
+    margin-right: 5px;
+}
+
+/* Blur overlay on hover (very premium effect) */
+.project-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 15, 30, 0.15);
+    backdrop-filter: blur(0px);
+    opacity: 0;
+    transition: 0.4s ease;
+}
+
+
+
+/* Mobile Fixes */
+@media (max-width: 576px) {
+
+    .demo-btn,
+    .code-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .project-title {
+        font-size: 20px;
+    }
+
+    .project-desc {
+        font-size: 14px;
+    }
+}
+
+/* resume download button in about page */
+.resume-btn {
+    background: #102b61;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 234, 255, 0.25);
+    margin-bottom: 20px;
+}
+
+.resume-btn:hover {
+    background: whitesmoke;
+    color: #0f0f1a;
+    box-shadow: 0 0 20px rgba(230, 194, 53, 0.55);
+    transform: translateY(-3px);
 }
