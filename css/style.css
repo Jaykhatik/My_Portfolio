@@ -1,4 +1,8 @@
 /* ========================= NAVBAR ========================= */
+body{
+    overflow-x: hidden;
+}
+
 
 .custom-nav {
     background-color: #132c63;
