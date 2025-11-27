@@ -6,55 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jay Portfolio</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-
-    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
     <!-- ========================= NAVBAR ========================= -->
-    <nav class="navbar navbar-expand-lg custom-nav py-3 sticky-top">
+    <nav class="navbar navbar-expand-lg custom-nav py-3 sticky-top" data-aos="fade-down" data-aos-duration="900">
         <div class="container">
 
-            <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html">
+            <a class="navbar-brand d-flex align-items-center text-white fw-bold" href="index.html" data-aos="fade-right"
+                data-aos-duration="2100" data-aos-delay="100">
                 <span class="j-icon me-2"></span> JayQuest
             </a>
 
             <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+                data-bs-target="#navbarNav" data-aos="zoom-in" data-aos-duration="1000">
                 <i class="bi bi-list fs-1"></i>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-lg-4 gap-3 text-center">
+                    <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="200">
+                        <a class="nav-link active"><i class="bi bi-house-door me-1"></i>Home</a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-house-door me-1"></i>
-                            Home</a></li>
+                    <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="300">
+                        <a class="nav-link" href="skills.html"><i class="bi bi-diagram-3 me-1"></i>Skills</a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="skills.html"><i class="bi bi-diagram-3 me-1"></i>
-                            Skills</a></li>
+                    <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="400">
+                        <a class="nav-link" href="mission.html"><i class="bi bi-trophy me-1"></i>Missions</a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="mission.html"><i class="bi bi-trophy me-1"></i>
-                            Missions</a></li>
+                    <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="500">
+                        <a class="nav-link" href="about.html"><i class="bi bi-person-lines-fill me-1"></i>About</a>
+                    </li>
 
-                    <li class="nav-item"><a class="nav-link" href="about.html"><i
-                                class="bi bi-person-lines-fill me-1"></i> About</a></li>
-
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>
-                            Contact</a></li>
-
+                    <li class="nav-item" data-aos="fade-down" data-aos-duration="900" data-aos-delay="600">
+                        <a class="nav-link" href="contact.html"><i class="bi bi-envelope me-1"></i>Contact</a>
+                    </li>
                 </ul>
             </div>
 
@@ -65,81 +60,81 @@
     <section class="hero-section d-flex align-items-center text-center py-5" style="min-height: 100vh;">
         <div class="container">
 
-            <div class="hero-icon mb-4">
+            <div class="hero-icon mb-4" data-aos="zoom-in" data-aos-duration="1100">
                 <i class="bi bi-code-slash"></i>
             </div>
 
-            <h1 class="fw-bold text-white mb-4 display-4 display-md-2 hero-title">
+            <h1 class="fw-bold text-white mb-4 display-4 display-md-2 hero-title" data-aos="zoom-in"
+                data-aos-duration="1100" data-aos-delay="100">
                 Welcome to My Dev Quest
             </h1>
 
-            <p class="subtitle px-3 py-2 d-inline-block rounded-3">
+            <p class="subtitle px-3 py-2 d-inline-block rounded-3" data-aos="fade-up" data-aos-duration="1100"
+                data-aos-delay="200">
                 Embark on an epic journey through code, creativity, and innovation
             </p>
 
             <div class="mt-4 d-flex justify-content-center flex-wrap gap-3">
-                <a href="mission.html" class="btn btn-warning hero-btn filled-btn px-4 py-2">
+                <a href="mission.html" class="btn btn-warning hero-btn filled-btn px-4 py-2" data-aos="zoom-in"
+                    data-aos-duration="900" data-aos-delay="250">
                     <i class="bi bi-trophy-fill me-2"></i> VIEW MY MISSIONS
                 </a>
 
                 <a href="assets/Jaykhatik_Mern-Stack-Developer_Resume (2).pdf" download
-                    class="btn resume-button-download px-4 py-2"> <i class="bi bi-download me-2"></i>Download Resume</a>
+                    class="btn resume-button-download px-4 py-2" data-aos="zoom-in" data-aos-duration="900"
+                    data-aos-delay="300">
+                    <i class="bi bi-download me-2"></i>Download Resume
+                </a>
 
-                <a href="skills.html" class="btn btn-outline-warning hero-btn outline-btn px-4 py-2">
+                <a href="skills.html" class="btn btn-outline-warning hero-btn outline-btn px-4 py-2" data-aos="zoom-in"
+                    data-aos-duration="900" data-aos-delay="350">
                     <i class="bi bi-diagram-3 me-2"></i> EXPLORE MY SKILLS
                 </a>
             </div>
 
-            <!-- Animated Arrow -->
-            <div class="scroll-arrow mt-5">
+            <div class="scroll-arrow mt-5" data-aos="fade-up" data-aos-duration="900" data-aos-delay="400">
                 <i class="bi bi-chevron-double-down fs-1"></i>
             </div>
 
         </div>
     </section>
+
+    <!-- ========================= STATS SECTION ========================= -->
     <section class="py-5 stats-section">
         <div class="container">
             <div class="row g-4">
 
                 <!-- Card 1 -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="0">
                     <div class="stats-card p-4 text-center">
-                        <div class="stats-icon mb-2">
-                            <i class="bi bi-award"></i>
-                        </div>
+                        <div class="stats-icon mb-2"><i class="bi bi-award"></i></div>
                         <h2 class="stats-number">10+</h2>
                         <p class="stats-text mb-0">Projects Completed</p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="120">
                     <div class="stats-card p-4 text-center">
-                        <div class="stats-icon mb-2">
-                            <i class="bi bi-star"></i>
-                        </div>
+                        <div class="stats-icon mb-2"><i class="bi bi-star"></i></div>
                         <h2 class="stats-number">0</h2>
                         <p class="stats-text mb-0">Happy Clients</p>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="240">
                     <div class="stats-card p-4 text-center">
-                        <div class="stats-icon mb-2">
-                            <i class="bi bi-graph-up-arrow"></i>
-                        </div>
+                        <div class="stats-icon mb-2"><i class="bi bi-graph-up-arrow"></i></div>
                         <h2 class="stats-number">4+</h2>
                         <p class="stats-text mb-0">Years Experience</p>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="360">
                     <div class="stats-card p-4 text-center">
-                        <div class="stats-icon mb-2">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
+                        <div class="stats-icon mb-2"><i class="bi bi-code-slash"></i></div>
                         <h2 class="stats-number">8+</h2>
                         <p class="stats-text mb-0">Technologies</p>
                     </div>
@@ -148,28 +143,28 @@
             </div>
         </div>
     </section>
+
+    <!-- ========================= SERVICES ========================= -->
     <section id="services-about" class="py-5 mt-5 mb-5">
         <div class="container">
 
-            <h2 class="section-title text-center mb-2">
+            <h2 class="section-title text-center mb-2" data-aos="fade-down" data-aos-duration="900">
                 What I <span class="highlight">Offer</span>
             </h2>
-            <p class="section-subtitle text-center mb-5">
+
+            <p class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-delay="100">
                 High-quality development services crafted with modern tools & clean design.
             </p>
 
             <div class="row g-4 justify-content-center">
 
                 <!-- CARD 1 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="0">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="bi bi-window"></i>
-                        </div>
+                        <div class="service-icon"><i class="bi bi-window"></i></div>
                         <h4 class="service-title">Web App Development</h4>
-                        <p class="service-text">
-                            Building scalable, responsive full-stack applications with modern tech.
-                        </p>
+                        <p class="service-text">Building responsive full-stack applications.</p>
                         <div class="tag-box">
                             <span class="tag-index">React</span>
                             <span class="tag-index">MongoDB</span>
@@ -179,15 +174,11 @@
                 </div>
 
                 <!-- CARD 2 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="120">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="bi bi-brush"></i>
-                        </div>
+                        <div class="service-icon"><i class="bi bi-brush"></i></div>
                         <h4 class="service-title">UI / UX Development</h4>
-                        <p class="service-text">
-                            Converting designs into pixel-perfect, interactive user interfaces.
-                        </p>
+                        <p class="service-text">Pixel-perfect, interactive user interfaces.</p>
                         <div class="tag-box">
                             <span class="tag-index">Figma</span>
                             <span class="tag-index">Animations</span>
@@ -197,15 +188,11 @@
                 </div>
 
                 <!-- CARD 3 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="240">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="bi bi-diagram-3"></i>
-                        </div>
+                        <div class="service-icon"><i class="bi bi-diagram-3"></i></div>
                         <h4 class="service-title">API Development</h4>
-                        <p class="service-text">
-                            Secure and optimized REST APIs with authentication & validation.
-                        </p>
+                        <p class="service-text">Secure and optimized REST APIs.</p>
                         <div class="tag-box">
                             <span class="tag-index">Node.js</span>
                             <span class="tag-index">Express</span>
@@ -215,15 +202,11 @@
                 </div>
 
                 <!-- CARD 4 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="360">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="bi bi-speedometer2"></i>
-                        </div>
+                        <div class="service-icon"><i class="bi bi-speedometer2"></i></div>
                         <h4 class="service-title">Performance Optimization</h4>
-                        <p class="service-text">
-                            Faster load times, SEO-ready setup, and optimized user experience.
-                        </p>
+                        <p class="service-text">Faster load times, SEO-ready setup.</p>
                         <div class="tag-box">
                             <span class="tag-index">SEO</span>
                             <span class="tag-index">Code Splitting</span>
@@ -231,17 +214,13 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- CARD 5 -->
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-duration="900" data-aos-delay="480">
                     <div class="service-card">
-                        <div class="service-icon">
-                            <i class="bi bi-layers"></i>
-                        </div>
+                        <div class="service-icon"><i class="bi bi-layers"></i></div>
                         <h4 class="service-title">Full-Stack MERN Development</h4>
-                        <p class="service-text">
-                            Building end-to-end web applications with
-                            clean UI and optimized performance.
-                        </p>
+                        <p class="service-text">End-to-end applications with clean UI.</p>
                         <div class="tag-box">
                             <span class="tag-index">MongoDB</span>
                             <span class="tag-index">Express & Node.js</span>
@@ -249,60 +228,49 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="py-5 cta-section text-center">
+    <!-- ========================= CTA ========================= -->
+    <section class="py-5 cta-section text-center" data-aos="fade-up" data-aos-duration="900" data-aos-delay="100">
         <div class="container">
 
-            <h2 class="cta-title mb-3">Ready to start your project?</h2>
+            <h2 class="cta-title mb-3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="150">Ready to start your project?</h2>
 
-            <p class="cta-subtitle mb-4">
+            <p class="cta-subtitle mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
                 Let's collaborate to bring your ideas to life with clean, efficient code and stunning UI.
             </p>
 
             <div class="d-flex justify-content-center gap-3">
-                <a href="contact.html" class="btn btn-primary cta-btn-filled px-4 py-2">
-                    Get in Touch →
-                </a>
+                <a href="contact.html" class="btn btn-primary cta-btn-filled px-4 py-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Get in Touch →</a>
 
-                <a href="mission.html" class="btn btn-outline-primary cta-btn-outline px-4 py-2">
-                    View Portfolio →
-                </a>
+                <a href="mission.html" class="btn btn-outline-primary cta-btn-outline px-4 py-2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">View Missions →</a>
             </div>
 
         </div>
     </section>
 
     <!-- ========================= FOOTER ========================= -->
-    <footer class="custom-footer text-center py-5">
+    <footer class="custom-footer text-center py-5" data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">
         <div class="container">
 
-            <!-- Social Icons -->
             <div class="footer-icons mb-3 d-flex justify-content-center gap-4 flex-wrap">
-
-                <a href="https://github.com/jaykhatik" class="footer-icon"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/jay-khatik-573616372/" class="footer-icon"><i
+                <a href="https://github.com/jaykhatik" class="footer-icon" data-aos="fade-left" data-aos-duration="900" data-aos-delay="150"><i class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/jay-khatik-573616372/" class="footer-icon" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300"><i
                         class="bi bi-linkedin"></i></a>
-                <a href="#" class="footer-icon"><i class="bi bi-twitter"></i></a>
-                <a href="mailto:jaykhatik1905@gmail.com" class="footer-icon"><i class="bi bi-envelope"></i></a>
-
+                <a href="#" class="footer-icon" data-aos="fade-left" data-aos-duration="900" data-aos-delay="450"><i class="bi bi-twitter" ></i></a>
+                <a href="mailto:jaykhatik1905@gmail.com" class="footer-icon" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600"><i class="bi bi-envelope"></i></a>
             </div>
 
-            <!-- Footer Text -->
-            <p class="footer-text mb-0">
-                © 2025 Jay Quest. All quests completed with passion and ❤.
-            </p>
+            <p class="footer-text mb-0">© 2025 Jay Quest. All quests completed with passion and ❤.</p>
 
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <script>AOS.init();</script>
 </body>
 
 </html>
